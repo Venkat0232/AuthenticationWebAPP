@@ -1,0 +1,108 @@
+/* src/components/SignUpForm.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; /* Adjusted padding for better spacing */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    max-width: none; /* Removed max-width constraint */
+    box-sizing: border-box;
+    position: relative; /* Ensures z-index works */
+    z-index: 1; /* Ensures form is above the background image */
+  }
+  
+  .signup-header {
+    font-size: 2rem; /* Slightly smaller header */
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 700; /* Bold header */
+  }
+  
+  .signup-form {
+    width: 100%;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-bottom: 15px; /* Adjusted margin for better spacing */
+    font-size: 0.875rem; /* Slightly smaller font size for labels */
+    color: #555; /* Slightly lighter color for labels */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px; /* Reduced padding for smaller height */
+    font-size: 0.875rem; /* Slightly smaller font size for inputs */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Reduced border-radius for a sharper look */
+    margin-top: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Enhanced shadow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px; /* Reduced padding for smaller height */
+    font-size: 0.875rem; /* Slightly smaller font size for the button */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px; /* Reduced border-radius for a sharper look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .submit-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+  }
+  
+  .error-message {
+    color: #e74c3c; /* Red color for error messages */
+    font-size: 0.75rem; /* Slightly smaller font size for error messages */
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .image-container {
+    background: url('../assets/img1.jpg') no-repeat center center;
+    background-size: cover;
+    grid-column: 2 / span 1;
+  }
+  /* src/components/SignUpForm.css */
+
+.link-text {
+    margin-top: 20px; /* Spacing from the button */
+    font-size: 0.875rem; /* Consistent font size */
+    color: #007bff; /* Link color */
+  }
+  
+  .link-text a {
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+  }
+  
+  .link-text a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }
+  
